@@ -1,0 +1,1010 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: absolute;
+
+    top: 32px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 78%;
+    height: 52px;
+
+    padding: 0 14px 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(100, 110, 110, 0.40);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    border-radius: 35px;
+
+    z-index: 20;
+
+    color: white;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar > p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   NAVIGATION LIST
+========================= */
+
+.navbar > ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.navbar > ul li {
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.navbar > ul li:hover {
+
+    color: #d4d4d4;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   RIGHT NAVBAR
+========================= */
+
+.navbar > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+}
+
+
+/* =========================
+   ICONS
+========================= */
+
+.navbar .icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.navbar .icons i {
+
+    width: 14px;
+    height: 14px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: normal;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.navbar .icons i:hover {
+
+    transform: scale(1.15);
+
+    color: #d5d5d5;
+}
+
+
+/* =========================
+   SIGN IN BUTTON
+========================= */
+
+#btn-1 {
+
+    border: none;
+
+    background: white;
+
+    color: black;
+
+       padding: 10px 20px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+#btn-1:hover {
+
+    transform: translateY(-2px);
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.general {
+
+    position: relative;
+
+    width: calc(100% - 18px);
+
+    min-height: calc(100vh - 18px);
+
+    margin: 9px;
+
+    padding: 150px 11% 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background-image: url("images/hero-pic.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   DARK HERO OVERLAY
+========================= */
+
+.general::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.43);
+
+    z-index: 0;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.two-sections {
+
+    position: relative;
+
+    z-index: 3;
+
+    flex: 1;
+}
+
+
+.herosection {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 600px;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero h1 {
+
+    margin: 0 0 28px;
+
+    color: white;
+
+    font-size: clamp(34px, 4vw, 57px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+}
+
+
+/* =========================
+   NUMBERS
+========================= */
+
+.numers {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 42px;
+
+    margin-bottom: 27px;
+}
+
+
+.numers > div {
+
+    min-width: 55px;
+}
+
+
+.numers h3 {
+
+    margin: 0 0 10px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 400;
+}
+
+
+.numers p {
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 7px;
+
+    line-height: 1.45;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.btn-2 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.btn-2 button {
+
+    min-width: 82px;
+
+    padding: 8px 10px;
+
+    border-radius: 20px;
+
+    border: none;
+
+    background: white;
+
+    color: black;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-2 button span {
+
+    margin-left: 7px;
+
+    font-size: 9px;
+}
+
+
+.btn-2 button:hover {
+
+    transform: translateY(-3px);
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   EXPLORE MORE BUTTON
+========================= */
+
+.btn-2 #explore-btn {
+
+    background: rgba(0, 0, 0, 0.45);
+
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    backdrop-filter: blur(5px);
+}
+
+
+.btn-2 #explore-btn:hover {
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-color: white;
+}
+
+
+/* =========================
+   RIGHT SECTION / GLASS CARD
+========================= */
+
+.second-section {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 315px;
+
+    min-height: 170px;
+
+    padding: 31px 24px 20px;
+
+    background: rgba(55, 65, 60, 0.45);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+
+    color: white;
+}
+
+
+/* =========================
+   CARD ARROW
+========================= */
+
+.card-arrow {
+
+    position: absolute;
+
+    top: -4px;
+
+    right: -4px;
+
+    width: 29px;
+    height: 29px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: black;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+
+.card-arrow:hover {
+
+    transform: rotate(45deg) scale(1.08);
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.second-section h2 {
+
+    margin: 0 0 13px;
+
+    color: white;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.second-section > p {
+
+    margin: 0 0 16px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 7px;
+
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   CLIENT AREA
+========================= */
+
+.client {
+
+    width: 100%;
+
+    min-height: 27px;
+
+    padding: 4px 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    color: black;
+}
+
+
+/* =========================
+   CLIENT PICTURES
+========================= */
+
+.pics {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-right: auto;
+}
+
+
+.pics span {
+
+    width: 18px;
+    height: 18px;
+
+    margin-left: -3px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid white;
+
+    background: #777;
+
+    color: white;
+
+    font-size: 6px;
+
+    font-weight: 600;
+}
+
+
+.pics span:first-child {
+
+    margin-left: 0;
+
+    background: #8c7668;
+}
+
+
+.pics span:nth-child(2) {
+
+    background: #4e5654;
+}
+
+
+.pics span:nth-child(3) {
+
+    background: #8c4d3d;
+}
+
+
+/* =========================
+   CLIENT TEXT
+========================= */
+
+.client-txt {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1px;
+}
+
+
+.client-txt h4 {
+
+    margin: 0;
+
+    color: black;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+.client-txt p {
+
+    margin: 0;
+
+    color: #555;
+
+    font-size: 5px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        width: 88%;
+
+        padding: 0 13px;
+    }
+
+
+    .navbar > ul {
+
+        gap: 17px;
+    }
+
+
+    .navbar > ul li {
+
+        font-size: 7px;
+    }
+
+
+    .navbar .icons {
+
+        gap: 9px;
+    }
+
+
+    .general {
+
+        padding-left: 7%;
+
+        padding-right: 7%;
+
+        gap: 35px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+
+    .second-section {
+
+        width: 285px;
+    }
+}
+
+
+/* ====
+   MOBILE
+ */
+
+@media (max-width: 700px) {
+
+    body {
+
+        overflow-x: hidden;
+    }
+
+
+    .navbar {
+
+        top: 18px;
+
+        width: 90%;
+
+        height: 48px;
+
+        padding: 0 11px 0 15px;
+    }
+
+
+    .navbar > p {
+
+        font-size: 11px;
+    }
+
+
+    .navbar > ul {
+
+        gap: 10px;
+    }
+
+
+    .navbar > ul li {
+
+        font-size: 6px;
+    }
+
+
+    .navbar .icons {
+
+        display: none;
+    }
+
+
+    #btn-1 {
+
+        padding: 7px 10px;
+
+        font-size: 6px;
+    }
+
+
+    .general {
+
+        width: calc(100% - 12px);
+
+        min-height: calc(100vh - 12px);
+
+        margin: 6px;
+
+        padding: 110px 25px 40px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 45px;
+
+        background-position: center;
+    }
+
+
+    .two-sections {
+
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .herosection {
+
+        width: 100%;
+
+        max-width: none;
+
+        text-align: left;
+    }
+
+
+    .hero h1 {
+
+        font-size: 34px;
+
+        line-height: 1;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .numers {
+
+        gap: 30px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .numers h3 {
+
+        font-size: 14px;
+    }
+
+
+    .numers p {
+
+        font-size: 7px;
+    }
+
+
+    .btn-2 {
+
+        gap: 7px;
+    }
+
+
+    .btn-2 button {
+
+        padding: 8px 9px;
+
+        font-size: 6px;
+    }
+
+
+    .second-section {
+
+        width: 100%;
+
+        min-height: 155px;
+
+        padding: 27px 20px 17px;
+
+        border-radius: 17px;
+    }
+
+
+    .second-section h2 {
+
+        font-size: 15px;
+    }
+
+
+    .second-section > p {
+
+        font-size: 12px;
+    }
+
+
+    .card-arrow {
+
+        width: 28px;
+
+        height: 28px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .navbar {
+
+        width: 92%;
+    }
+
+
+    .navbar > p {
+
+        font-size: 10px;
+    }
+
+
+    .navbar > ul {
+
+        gap: 7px;
+    }
+
+
+    .navbar > ul li {
+
+        font-size: 5px;
+    }
+
+
+    #btn-1 {
+
+        padding: 6px 9px;
+
+        font-size: 5px;
+    }
+
+
+    .general {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 30px;
+    }
+
+
+    .numers {
+
+        gap: 25px;
+    }
+
+
+    .btn-2 button {
+
+        min-width: 78px;
+
+        font-size: 6px;
+    }
+
+
+    .second-section {
+
+        padding: 25px 17px 15px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+    .navbar > ul {
+
+        gap: 5px;
+    }
+
+
+    .navbar > ul li {
+
+        font-size: 4.5px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 27px;
+    }
+
+
+    .second-section h2 {
+
+        font-size: 14px;
+    }
+}
+
+.pics img{
+    width:20px;
+    height:20px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
